@@ -9,17 +9,17 @@ const renderer = new THREE.WebGLRenderer(); // добавим рендер(вы�
 scene.background = new THREE.Color(0x000000); // созд цвет сцене
 renderer.setSize(window.innerWidth, window.innerHeight); // созд размер рендера 
 document.body.appendChild(renderer.domElement); // в боди вставляем наш рендер
-camera.position.z = 3; // ставим камеру
+camera.position.z = 2; // ставим камеру
 
-const points = [                  //созд масив точек для рисования линии
-    new THREE.Vector2(0, 0), //начало линии которую рисуем вектором по точкам координат
-    new THREE.Vector2(1, 1) // конец линии по координатам
-]
+// const points = [                  //созд масив точек для рисования линии
+//     new THREE.Vector2(0, 0), //начало линии которую рисуем вектором по точкам координат
+//     new THREE.Vector2(1, 1) // конец линии по координатам
+// ]
 
-const material = new THREE.LineBasicMaterial({color: 0xffffff}); // созд материл, а конкретно цвет
-const geometryLine = new THREE.BufferGeometry().setFromPoints(points); //геометрия для линии
-const line = new THREE.Line(geometryLine, material); // созд линию с нашей геометрией и материалом
-scene.add(line); // добавляем на сцену нашу геометрию линию из точек
+// const material = new THREE.LineBasicMaterial({color: 0xffffff}); // созд материл, а конкретно цвет
+// const geometryLine = new THREE.BufferGeometry().setFromPoints(points); //геометрия для линии
+// const line = new THREE.Line(geometryLine, material); // созд линию с нашей геометрией и материалом
+// scene.add(line); // добавляем на сцену нашу геометрию линию из точек
 
 // созд куб
 const loader = new THREE.TextureLoader();

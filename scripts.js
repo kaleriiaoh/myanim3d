@@ -25,9 +25,16 @@ scene.add(line); // добавляем на сцену нашу геометри
 const loader = new THREE.TextureLoader();
 //материал для куба в виде картинок
 const cubes = []; 
-const materialImg = new THREE.MeshBasicMaterial({
-    map: loader.load('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOYT3MGgtz7S4lQYm1LuknpieLxXYGGrpLoPu8WySxj17zNKHoLy_7KkazIjbQqnuLOUs&usqp=CAU'),
-});
+
+
+const materialImg = [
+    new THREE.MeshBasicMaterial({map: loader.load('https://kaleriiaoh.github.io/myanim3d/img/1.png')}),
+    new THREE.MeshBasicMaterial({map: loader.load('https://kaleriiaoh.github.io/myanim3d/img/2.png')}),
+    new THREE.MeshBasicMaterial({map: loader.load('https://kaleriiaoh.github.io/myanim3d/img/3.png')}),
+    new THREE.MeshBasicMaterial({map: loader.load('https://kaleriiaoh.github.io/myanim3d/img/4.png')}),
+    new THREE.MeshBasicMaterial({map: loader.load('https://kaleriiaoh.github.io/myanim3d/img/5.png')}),
+    new THREE.MeshBasicMaterial({map: loader.load('https://kaleriiaoh.github.io/myanim3d/img/6.png')}),
+  ];
 
 const material1 = new THREE.MeshBasicMaterial({color: 0xdddddd});
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
